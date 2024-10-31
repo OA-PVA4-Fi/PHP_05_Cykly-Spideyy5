@@ -77,7 +77,13 @@ $bitcoinPrices = [
 
 // reseni:
 
+$celkem = 0;
 
+foreach ($bitcoinPrices as $celkove) {
+    $celkem +=(float) $celkove;
+}
+
+echo "Vlastnim BTC: ". $celkem;
 
 
 

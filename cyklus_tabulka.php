@@ -10,7 +10,7 @@
  *
  */
 
-$city = array(
+$city =array(
 	"Italy"=>"Rome",
 	"Luxembourg"=>"Luxembourg",
 	"Belgium"=> "Brussels",
@@ -38,6 +38,12 @@ $city = array(
 	"Poland"=>"Warsaw"
 );
 
+
 //reseni
+ksort ($city);
+foreach ($city as $x => $y) {
+  echo "Stat: " . "$x <br> Hlavni mesto: $y <br>";
+}
+
 
 ?>
